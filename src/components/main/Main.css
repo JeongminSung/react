@@ -1,0 +1,19 @@
+.main{
+    background: #fafafa;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    width: 100%
+}
+
+.main-container{
+    padding-top: 88px;
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 935px;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+} 

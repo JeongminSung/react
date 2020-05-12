@@ -1,0 +1,149 @@
+
+/* 오른쪽 박스 */
+
+.right-box .my-profile{
+    margin: 22px 0 10px 0;
+    padding-left: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.right-box .profile-img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.right-box .profile-box{
+    margin-left: 14px;
+}
+.right-box .profile-id, .profile-name{
+    white-space: nowrap;
+    text-overflow: ellipsis;  
+}
+
+.right-box .profile-id{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.right-box .profile-name{
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.right-box .recommend-container{
+    margin: 0 0 16px -16px;
+    width: 325px;
+}
+
+.right-box .recommend-box{
+    padding: 4px 16px;
+    margin-top: 18px;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-box .recommend-text{
+    color: #8e8e8e;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin: -3px 0 -4;
+}
+
+.right-box .recommend-seemore{
+    font-weight: 600;
+    margin: -2px 0 -3px;
+    line-height: 14px;
+    font-size: 12px;
+}
+
+.right-box .recommend-people-box{
+    margin: 0px 4px;
+    padding: 4px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: column;
+}
+
+.right-box .people-box{
+    padding: 6px 12px 6px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people-box .people-profile{
+    display: flex;
+}
+.people-box .people-img{
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+.people-box .followbtn-box{
+    float:right;
+}
+.people-box .followbtn{
+    color:#0095f6;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.people-box .feed-profile-border{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background: url('../../img/gradient.png') no-repeat center;
+    background-size: 42px 42px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+    margin-left: -4px;
+}
+
+.people-box .feed-profile-img{
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+
+/* info-nav */
+
+.right-box .info-nav{
+    margin-bottom: 16px;
+    max-width: 100%;
+}
+.info-nav .info-ul{
+    margin-bottom: 3px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.info-nav .info-li>a, .copyright{
+    font-size: 11px;
+    color: #c7c7c7;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.info-nav .info-li>a::after{
+    content: '. ';
+    margin: 0.3em;
+}
+.info-nav .info-li:last-child>a::after{
+    content: none;
+}
