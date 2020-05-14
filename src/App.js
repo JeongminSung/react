@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //class형태로 사용할 때는 , {Component} 도 함께 임포트 해줘야 한다.
 import Nav from "./components/nav/Nav"
 import Main from "./components/main/Main"
+import LoginMain from "./components/loginmain/LoginMain"
 
 class App extends Component {
   constructor(){
@@ -11,8 +12,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav />
-        <Main />
+        {/* <Nav />
+        <Main /> */}
+        <LoginMain/>
       </div>
     )
     //1. return문은 ()소괄호 : 여러줄이 있는게 하나일 때 

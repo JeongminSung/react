@@ -1,0 +1,28 @@
+.LoginLeft{
+    background-image: url('../../../../images/iphone/iphone.png');
+    background-size: 454px 617px;
+    background-position: 14px 0;
+    flex-basis: 454px;
+    height: 618px;
+    align-self: center;
+    position: relative;
+}
+
+.slide-img {
+    width: 240px;
+    position: absolute;
+    top:99px;
+    right:49px;
+}
+
+.showing{
+    z-index: 1;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    60% {opacity: 1;}
+}

@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './Left.css'
-import profile1 from '../../img/profile/profile1.jpg'
-import feedimg from '../../img/feedpic/pic1.jpg'
+import profile1 from '../../../../images/profile/profile1.jpg'
+import feedimg from '../../../../images/feedpic/pic1.jpg'
 
 class Left extends Component {
+  constructor(){
+    super()
+  }
 
   render() {
     return (
@@ -14,7 +17,7 @@ class Left extends Component {
               <li className="story-content">
                 <div className="story-profile-inner">
                   <div className="story-profile-border">
-                    <img src={profile1} className="story-profile-img" />
+                    <img src={profile1} className="story-profile-img" alt=""/>
                   </div>
                   <p>parishilton</p>
                 </div>
@@ -28,7 +31,7 @@ class Left extends Component {
             <header className="feed-header">
               <div className="feed-profile-box">
                 <div className="feed-profile-border">
-                  <img src={profile1} className="feed-profile-img" />
+                  <img src={profile1} className="feed-profile-img" alt=""/>
                 </div>
                 <div className="feed-id-box">
                   <a className="feed-id" href="">parishilton</a>

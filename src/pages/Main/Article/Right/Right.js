@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import './Right.css'
-import profile1 from '../../img/profile/profile2.jpg'
-import profile2 from '../../img/profile/profile4.jpg'
-import profile3 from '../../img/profile/profile5.jpg'
+import profile1 from '../../../../images/profile/profile2.jpg'
+import profile2 from '../../../../images/profile/profile4.jpg'
+import profile3 from '../../../../images/profile/profile5.jpg'
 
 class Right extends Component{
+  constructor(){
+    super()
+  }
 
   render() {
     return (

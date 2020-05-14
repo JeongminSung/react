@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Nav.css'
-import logo from '../../img/logo_text.png'
+import './Nav.scss';
+import logo from '../../../../images/logo_text.png';
 
 class Nav extends Component {
   constructor() {
@@ -9,7 +9,7 @@ class Nav extends Component {
 //app.js가 최상위니까 랜더에서 jsx로 리턴할때 최고 부모가 되는 section을 감싸야함
   render() {
     return (
-      <nav className="nav">
+      <nav className="Nav">
         <div className="nav-container">
           <div className="logo-box">
             <a href="index.html">
