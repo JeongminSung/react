@@ -1,0 +1,95 @@
+@import '../../styles/common.scss';
+
+.Header {
+    //nav 기본설정
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: $white;
+    height: 54px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: $border;
+
+    .nav-container {
+        display: flex;
+        width: 935px;
+        height: 54px;
+        margin: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+
+        //우측 로고
+        .logo-box {
+            width: 215px;
+            height: 36px;
+
+            img {
+                width: 110px;
+                margin-top: 4px;
+            }
+        }
+    }
+
+    // 서치바
+    .search-container {
+        height: 28px;
+        width: 200px;
+        position: relative;
+        margin-bottom: 3px;
+
+        input {
+            font-size: 14px;
+            background: $background;
+            border: $border;
+            padding: 5px 10px;
+            z-index: 2;
+            width: 100%;
+            border-radius: 3px;
+        }
+    }
+
+    .search-icon-box {
+        color: $gray;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 8px 0;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-40%, 0);
+        display: flex;
+
+        .search-icon {
+            font-size: 14px;
+            margin-right: 4px;
+        }
+    }
+
+    // 우측 아이콘
+    .icon-container {
+        padding-left: 24px;
+        margin-left: 15px;
+        display: flex;
+        width: 200px;
+        height: 28px;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .icon-box {
+            display: flex;
+            width: 24px;
+            height: 24px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

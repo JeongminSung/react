@@ -1,0 +1,230 @@
+/* 피드박스 */
+@import '../../../../styles/common.scss';
+
+.feed-container {
+  margin-bottom: 60px;
+  border-radius: 3px;
+  border: $border;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  vertical-align: baseline;
+
+
+  .feed-header {
+    align-items: center;
+    padding: 9px 14px;
+    border-bottom: $border;
+    display: flex;
+    justify-content: space-between;
+
+    .feed-profile-box {
+      cursor: pointer;
+      align-items: center;
+      display: flex;
+
+      .feed-profile-border {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: url('../../../../images/gradient.png') no-repeat center;
+        background-size: 44px 44px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        .feed-profile-img {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+        }
+      }
+
+      .feed-id-box {
+        margin-left: 16px;
+
+        a {
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .feed-btn-box {
+      width: 30px;
+      height: 100%;
+
+      button {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  /* 피드 사진 */
+  .feed-pic-box {
+    max-height: 764px;
+    overflow: hidden;
+
+    img {
+      width: 100%
+    }
+  }
+
+  /* 피드 댓글 */
+  .feed-comment-container {
+    background-color: $white;
+
+    /* 피드 소셜 아이콘 */
+    .comment-icon-box {
+      padding: 0 8px;
+      margin-top: 4px;
+      display: flex;
+      justify-content: space-between;
+
+      .icon-box-left,
+      .icon-box-right {
+        display: flex;
+        align-items: center;
+
+        button {
+          width: 40px;
+          height: 40px;
+          padding: 8px;
+
+          img {
+            width: 24px;
+          }
+        }
+      }
+    }
+
+    /* 피드 좋아요 */
+    .like-container {
+      padding: 0 16px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      display: flex;
+      align-items: baseline;
+
+      .like-text {
+        font-weight: 600;
+      }
+
+      .like-text-num {
+        font-weight: 700;
+        margin-right: 0.1em;
+      }
+    }
+
+    /* 피드 댓글창 */
+    .comment-box {
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+
+      .comment-people {
+        margin-bottom: 8px;
+        display: flex;
+        font-size: 14px;
+
+        a {
+          font-weight: 700;
+          display: inline-block;
+          margin-right: 4px;
+        }
+
+        span {
+          font-weight: 500;
+          display: inline-block;
+
+        }
+      }
+
+      .comment-all {
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray;
+        margin-bottom: 8px;
+      }
+
+      .comment-add-box {
+        padding: 0 16px;
+        border-top: $border;
+        font-size: 14px;
+        min-height: 56px;
+        height: 100%;
+        margin-top: 4px;
+      }
+
+      .comment-add-form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+      }
+
+      #comment {
+        resize: none;
+        width: 95%;
+        height: 18px;
+      }
+
+      .comment-btn {
+        color: $blue;
+        font-weight: 600px;
+        opacity: .3;
+      }
+    }
+
+    .comment-add-box {
+      padding: 0 16px;
+      border-top: $border;
+      font-size: 14px;
+      min-height: 56px;
+      height: 100%;
+      margin-top: 4px;
+
+      .comment-add-form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+
+        .comment {
+          resize: none;
+          width: 95%;
+          height: 18px;
+        }
+
+        .btnDefault {
+          color: $blue;
+          font-weight: 600px;
+          opacity: .3;
+        }
+
+        .btnChange {
+          color: $blue;
+          font-weight: 600px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

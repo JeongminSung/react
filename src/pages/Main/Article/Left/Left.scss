@@ -1,0 +1,70 @@
+@import '../../../../styles/common.scss';
+
+.Left {
+    margin-right: 28px;
+    width: 100%;
+
+    .story-container {
+        background-color: white;
+        border: $border;
+        border-radius: 3px;
+        margin-bottom: 24px;
+        padding: 16px;
+        width: 100%;
+        height: 116px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        .story-box {
+            height: 82px;
+
+            .story-ul {
+                display: flex;
+                flex-flow: row;
+
+                .story-content {
+                    width: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-flow: column;
+                    padding: 0 8px;
+
+                    .story-profile-border {
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 50%;
+                        background: url('../../../../images/gradient.png') no-repeat center;
+                        background-size: 64px 64px;
+                        position: relative;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            width: 56px;
+                            height: 56px;
+                            border-radius: 50%;
+                            border: 2px solid $white;
+                        }
+
+                    }
+
+                    p {
+                        font-size: 13px;
+                        max-width: 74px;
+                        line-height: 14px;
+                        overflow: hidden;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-weight: 400;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

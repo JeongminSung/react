@@ -1,0 +1,15 @@
+.info-li {
+  font-size: 11px;
+  color: #c7c7c7;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.info-li::after {
+  content: '. ';
+  margin: 0.3em;
+}
+
+.info-li:last-child::after {
+  content: none;
+}

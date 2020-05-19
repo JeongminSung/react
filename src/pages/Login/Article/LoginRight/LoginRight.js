@@ -23,6 +23,8 @@ class LoginRight extends Component {
     if (this.state.id.includes('@') && this.state.pwd.length >= 5){
       this.props.history.push('/main');
       //메인으로 넘어감
+    }else{
+      alert('아이디와 비밀번호를 확인해주세요');
     }
   }
 

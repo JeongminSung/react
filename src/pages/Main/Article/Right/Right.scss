@@ -1,0 +1,134 @@
+@import '../../../../styles/common.scss';
+
+//공용 클래스
+.id {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.name {
+    color: $gray;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/////////////////////////
+.Right {
+
+    .profile-container {
+        margin: 22px 0 10px 0;
+        padding-left: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+        }
+
+        .profile-box {
+            margin-left: 14px;
+        }
+    }
+
+    .recommend-container {
+        width: 309px;
+        margin-bottom: 16px;
+
+        .recommend-box {
+            margin-top: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+
+            p {
+                color: $gray;
+                line-height: 18px;
+            }
+
+            a {
+                margin: -2px 0 -3px;
+                font-size: 12px;
+            }
+        }
+
+        .recommend-people-box {
+            margin-left: 4px;
+            padding: 4px 0;
+            display: flex;
+            flex-direction: column;
+
+            .people-box {
+                padding: 6px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .people-profile {
+                    display: flex;
+                    align-items: center;
+
+                    //이미지만 있는 프로필
+                    .people-img {
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 12px;
+                        border-radius: 50%;
+                    }
+
+                    //테두리도 있는 프로필
+                    .feed-profile-border {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: url('../../../../images/gradient.png') no-repeat center;
+                        background-size: 42px 42px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 8px;
+                        margin-left: -4px;
+
+                        img {
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            border: 2px solid #fff;
+                        }
+                    }
+                }
+
+                .followbtn-box {
+                    float: right;
+
+                    .followbtn {
+                        color: #0095f6;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+.info-nav-container {
+    margin-bottom: 16px;
+    max-width: 100%;
+
+    .info-ul {
+        margin-bottom: 16px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
